@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400|Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+	<meta charset="UTF-8">
+	<style type="text/css">
+
+
+.beginning {
+  background: url(http://upload.wikimedia.org/wikipedia/commons/3/39/NYC_Top_of_the_Rock_Pano.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: black;
+  color: #000000;
+  display: table;
+  height: 700px;
+  text-align: center;
+  width: 100%;
+  margin-top: 0;
+  border-top-width: 0;
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0px auto;
+  margin-top: -25px;
+  padding: 13px 0;
+  color: #333;
+  background-color: #fff;
+  letter-spacing: .01rem;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 300;
+    letter-spacing: -1px;
+    font-size: 25px;
+    line-height: 150%;
+}
+
+p {
+  margin-bottom: 30px;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  margin: 0px auto;
+}
+
+.graph {
+    margin-top: 30px;
+}
+
+#interactive {
+    margin-top: 30px;
+}
+
+h1 {
+  font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 60px;
+  margin-left: -3px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-top: 222px;
+  padding-top: 0;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+h3 {
+  font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.5;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: rgba(0,0,0,0.8);
+  text-align: center;
+}
+
+h4 {
+  font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-style: normal;
+  margin-left: -3px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-top: 160px;
+  padding-top: 0;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+h5 {
+  font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-top: 200px;
+  margin-right: 850px;
+  padding-top: 0;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.g-table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: gray;
+   border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.g-table tbody th td {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.g-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: gray;
+  margin: 0px auto;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: gray;
+}
+
+tbody {
+  vertical-align: middle;
+  border-color: gray;
+}
+
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: gray;
+  text-align: center;
+}
+
+td, th {
+  display: table-cell;
+  vertical-align: inherit;
+   border-bottom: 1px solid #ccc;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+
+
+.g-table tbody td {
+  font-size: 16px;
+  text-align: right;
+}
+
+
+th {
+  vertical-align: inherit;
+}
+
+.block-content {
+  margin: 0px auto;
+  width: 57%;
+}
+
+#table-headline {
+  margin: 0px auto;
+  width: 57%;
+}
+
+img {
+  width: 80%;
+  margin: 0px auto;
+  height: auto;
+  padding: 30px 0px 10px 0px;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.submit-button {
+
+}
+
+input[type=text] {
+  border: 10px solid black;
+  width: 200px;
+  height: 40px;
+  margin: 0px auto;
+}
+
+#map {
+  margin-left: 70px;
+  width: 100%;
+}
+
+figcaption { 
+    display: block;
+    font-size: 16px;
+}
+
+</style>
+	<title>Who Owns NYC?</title>
+</head>
+
+<body>
+
+	<header class="beginning">
+			<h1>Who owns NYC?</h1>
+
+      <h4>by Eric French</h4>
+
+      <h5>Photo credit: <a href="http://en.wikipedia.org/wiki/GE_Building#/media/File:NYC_Top_of_the_Rock_Pano.jpg">Daniel Schwen/Creative Commons</a></h5>
+	</header>
+
+  <div class="block-content">
+
+  <p class="graph">Most people in NYC rents (about <a href="http://www.nyc.gov/html/dcp/html/census/pop_facts.shtml">two-thirds</a> of the population), but I wanted to find out how many people owned housing property in NYC. Who owned how much? I suspected there was just a small number of people owning multiple properties, but I wanted to back that suspicion up with numbers. However, when looking through data that I got from the <a href="http://www.nyc.gov/html/dcp/html/bytes/dwn_pluto_mappluto.shtml#mappluto">NYC Department</a> of City Planning focused on the East Village neighborhood, where I live, this is what I found:</p> 
+  
+</div>
+
+<div class="g-table"><h3 id="table-headline">Housing ownership change from 2002 to 2014 in the East Village.</h3></div>
+<table>
+<thead>
+<tr>
+<td></td>
+<th>2002</th>
+<th>2014</th>
+<th>% change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>LLC</th>
+<td>1327</td>
+<td>1699</td>
+<td>28%</td>
+</tr>
+<tr>
+<th>Name</th>
+<td>662</td>
+<td>364</td>
+<td>-45%</td>
+</tr>
+<tr>
+<th>Co-op</th>
+<td>274</td>
+<td>271</td>
+<td>-1%</td>
+</tr>
+<tr>
+<th>Condo</th>
+<td>87</td>
+<td>163</td>
+<td>87%</td>
+</tr>
+<tr>
+<th>Government</th>
+<td>65</td>
+<td>33</td>
+<td>-49%</td>
+</tr>
+<tr>
+<th>NYU</th>
+<td>30</td>
+<td>22</td>
+<td>-27%</td>
+</tr>
+
+<tr>
+<th>Other</th>
+<td>43</td>
+<td>65</td>
+<td>51%</td>
+</tr>
+
+<tr>
+<th>Total</th>
+<td>2488</td>
+<td>2617</td>
+<td>5%</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="block-content">
+
+<p class="graph">It was hard to find the actual owner’s names, and so hard to find who owned what. A lot of landlords register their ownership behind limited liability companies (LLCs).</p>
+
+<p class="graph">You can also see the how property owners had expanded the use of LLCs when registering their properties within the last decade or so. To establish what property was owned by an LLC, which one by a regular person, and which by some other entity like NYU, I went through the owner’s name and used my own judgement and some help from the <a href="http://www.nyc.gov/html/dcp/pdf/bytes/pluto_datadictionary.pdf?r=1">Building Class Codes</a>. (Here is the <a href="https://docs.google.com/spreadsheets/d/1XOvniocX1Y8TiOXiVh1awTkAlcQHx-D6tG1aS4jPpJM/edit?usp=sharing">raw</a> <a href="https://docs.google.com/spreadsheets/d/1Q42_JfMMCulaTBpP1ayH7tVudDOoUZak-Vj10Ii68mk/edit?usp=sharing">data</a>. If you want to look through it and find errors in my analysis. Don’t hesitate to add a comment on the document!).</p>
+
+<p class="graph">At least 307 of property owners in 2002 changed from using their proper name to an LLC in 2014, almost 12 percent of present day owners in the area. There was a 28 percent of LLCs increasing since 2002, which consists of almost 65 percent of LLCs as the owners of housing properties in the East Village. People using proper names dropped down to almost half. This does not count the LLCs that own condos and co-ops because a lot of the data identified that the building was a condominium structure, but had no owner associated with it possibly because you have multiple people owning a condo each and not the building itself. Though a different type of living arrangement, the same can be said of <a href="http://en.wikipedia.org/wiki/Co-operative_living_arrangements">co-ops</a>, where it would make sense for people in a co-op forming an LLC because they want to share ownership of a place and so form a partnership and become members of that partnership, which the LLC makes it easy to do.</p>  
+<p class="graph">You can also see how LLCs have tripled in Brooklyn since 2002 until 2013, when Michael “Ziggy” Mintz, a GIS Lecturer, created a map showing the same pattern:</p>
+  
+<figure id="map"><img src="http://elephant-bird.net/LLCs/LLCs.gif">
+<figcaption>Source: <a href="http://elephant-bird.net/LLCs/">Michael "Ziggy" Mintz</a></figcaption>
+</figure>
+
+<p class="graph">Why are people in NYC using LLCs? But first…</p>
+
+<h3>What is an LLC?</h3>
+
+<p class="graph">A limited liability company is used mostly for business purposes. According to <a href="http://www.dos.ny.gov/corps/llcfaq.asp#whatisllc">New York State’s Department of State, Division of Corporations, State Records & UCC</a>, a LLC is a legal business framework that limits the extent to which the owner(s) will get sued for any problem relating to that LLC activity, while at the same time allowing for more than one person to become business partners. In the case of real estate LLCs, if there any problems directly relating to the property itself, the property can be sued only for what the it is worth and not for what the owner(s)’worth or possesses outside of that LLC.</p>
+
+<p class="graph">As Kerri White, Director of the <a href="http://www.uhab.org/">Urban Homesteading Assistance Board</a>, explained: “From my understanding, LLCs were created to protect someone personally being affected or other assets being affected by another asset. For example if there is a fire at one building and the tenants in that building want to sue, they can only go after the LLC company, meaning they cannot sue for profits from another building they own or go after them personally.”</p>
+
+<h3>When did LLCs began to get used in NYC real estate?</h3>
+
+<p class="graph"><a href="http://www.pbnlaw.com/attorneys/wagner-john/">John Wagner</a>, a real estate lawyer at Porzio, Bromberg & Newman, explains that LLCs are a recent phenomenon in NYC:</p>
+
+<blockquote>“The NYC LLC was adopted in 1994. Prior to that, people used limited partnerships for their transactions, for the most part. It took a few years for people to get comfortable using the LLC, which is based on the German GMBH, and for a body of law to develop interpreting the 1994 statute. An LLC gives you much greater flexibility in structuring arrangements among investors (including management and operation of the entity and providing for preferred returns on investments),that you would have in a corporation, particularly an <a href="http://en.wikipedia.org/wiki/S_corporation">S corporation</a>, while at the same time limiting personal exposure and risk in the same manner as a corporation. In addition, using an LLC allows for the favorable (no double tax) tax treatment afforded by partnerships and limited partnerships, which is only available in the corporate context by using an S corporation.”</blockquote>
+
+<h3>So why use an LLC for your property instead of your given name? Why so many of them?</h3>
+
+<p class="graph">Housing analyst, real estate appraiser, blogger and Miller Samuel CEO <a href="http://www.millersamuel.com/about/jonathan-j-miller/">Jonathan Miller</a> explains why people might use LLCs:</p>
+
+<iframe width="778.6" height="444" src="https://www.youtube.com/embed/vSRYCk5JXg4" frameborder="0" allowfullscreen></iframe>
+
+<p>So homeowners might use LLC instead of their names for the following:</p>
+
+<ul>
+<li>Privacy: they don’t want to be identified. If you are a celebrity or someone with a lot of exposure, it makes sense to protect where you live so you and your family can maintain some peace and quiet from prying eyes or harassment.</li>
+
+<li>Shared ownership: it’s an easier and simpler way to have multiple people or parties own the same property, or to pass ownership from one party to the other.</li>
+
+<p class="graph">I went through the data and found some people who used their proper names in 2002 that changed to LLCs since then. <a href="http://robertbelenky.com/The_Book_of_Bob/Bobs_Bio.html">Robert Belenky</a>, who grew up in Greenwich Village and owns a property there, responded to my e-mail:</p>
+
+<blockquote>“The property was purchased years over 60 years ago by my parents. It is now owned jointly by a number of family members: wife, me, son, daughter, cousin … and upon my death and that of my wife, grandchildren … and no doubt eventually their children. My wife and I are in our 80s and live in a retirement community out of state. We have not lived in NYC for well over 50 years. But our son retains a pied a terre in the building which is under professional management which is overseen mostly by our son who is often in NYC. Our financial advisor and our attorney both felt that an LLC was the proper vehicle given our complicated situation.”</blockquote>
+
+<li>You own multiple properties: and so you want to protect each property’s value from possible repercussions coming from other assets.</li>
+
+<li>You have a lot of money: and so you want to protect your assets from possible repercussions coming from your property.</li>
+
+<li>Tax avoidance: LLCs do not need to pay certain taxes because of their status as a corporation.</li>
+
+<p class="graph">“In NYC, there is a loophole in the tax law. There's 4% tax on rental income if an investment property is owned by an individual or a corporation. The tax does not apply to LLCs. Therefore, you get the protection of a corporation; i. e., an inability to pierce the corporate veil with the benefit of avoiding a tax liability,” said <a href="http://ladplaw.com/about.html">Lisa L. Aguilera del Puerto</a>, a NYC real estate lawyer.</p>
+
+</ul>
+
+<h3>LLC and real estate as a vehicle for investment</h3>
+
+<p class="graph">Raquel Rolnik, former United Nations Special Rapporteur on Adequate Housing, explained how real estate in NYC has been used as an investment opportunity:</p>
+  
+<iframe src="https://player.vimeo.com/video/126258731" width="778.6" height="444" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p class="graph">Let’s consider this. Are rental properties good investment opportunities in NYC? Let’s take one example: the building that I live in in the East Village. According to PropertyShark, the building’s market value is $1,962,000. The property has 20 units, and from research I did, there is at least one studio apartment in the building that rents out for <a href="http://www.nofeerentals.com/new-york/rental/Manhattan/rental-apt-east-village-1115.asp?prop=88-typeprop_lt-0-0-0-0">$1915 a month</a>. My partner and I pay $2,650 a month for a one bedroom apartment, so I know that that is not the most expensive option (and from <a href="http://streeteasy.com/building/112-east-7-street-new_york#tab_building_detail=2">past rentals</a>, it seems it isn’t!). But if we say that $1915 a month is what all units cost, then it will take the owner four years to pay the property off, including taxes. Everything else after that are profits. A studio apartment in Manhattan costs in average $2,350, and a one bedroom in the East Village costs $2,850, so the prices in my building are below average. Also, the East Village is <a href="http://blog.zumper.com/2015/03/zumper-us-rent-report-february-2015/">below average in NYC overall</a>.</p>
+
+<p class="graph">So let’s see how much rent you pay and how long it would take to pay off the building, assuming that everyone pays the same amount per unit:</p>
+
+<h3>How long does it take to pay a landlord's building cost?</h3>
+
+<p class="graph">For this particular property in the East Village, if all 20 units paid the same rent, and taking into account the $108,169 it pays in taxes per year (though not the changes in property tax each year and not the maintanance costs), how long would it take to pay off the property if you were one of the tenants.</p>
+
+  <p class="graph">
+    How much do you pay for rent per month?: <input id="rent" type="text">
+    <button class="submit-button">Submit</button>
+    </p>
+
+    <div id="interactive">
+    <p class="output"></p>
+    </div>
+
+<p class="graph">What do you think?</p>
+
+<h3>Real estate: from home to investment</h3>
+
+<p class="graph">And <a href="http://www.elliman.com/pdf/0d12836b3c8e1219b6c22355bf27d20d2aa1b154">rental prices in NYC keep rising</a>. Could it be that as more properties become commodities, as Rolnik states, there is a relationship between rising rents and LLCs?</p>
+
+<p class="graph">Jonathan Miller hints that there could be a connection as the construction of luxury buildings brings the price up for everyone else as less people have the resources to become homeowners and there are less options available to rent besides what exists already. So there are more people competing in the rental market, and fewer affordable options to rent, which creates competition for the lower rents that people want, driving the price up.</p>
+
+<iframe src="https://player.vimeo.com/video/126417413" width="778.6" height="444" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p class="graph">Miller also states that this is a historical cycle that repeats itself, where a move to urban areas brings the price up, which becomes unsustainable to a point. If a lot of rental properties become unaffordable, and you cannot own, where else do you go? You leave New York, unless you have a lot of money. It becomes a city for people with money. And at the moment, NYC has become a rent-burdened city. Meaning that most people, <a href="http://www1.nyc.gov/site/hpd/about/nyc-housing-vacancy-report.page">56 percent</a>, pay more than 30 percent of their income towards their rent, leaving less money available for everything else. According to the New York City’s Office of the Comptroller report <a href="http://comptroller.nyc.gov/wp-content/uploads/documents/Growing_Gap.pdf">The Growing Gap: New York City’s Housing Affordability Challenge</a>, median apartment rents in New York rose 75% from 2000 to 2012 compared to 44% with the rest of the country, with a loss of 400,000 affordable apartments and an increase of 52,000 homeless in 2014 from 31,000 in 2002, which is not part of a nationwide trend.</p>
+
+<p class="graph">And as you can see in this Census Social Explorer map comparison, rent-burdened people throughout the city were more evenly distributed in 2002, while there are now two extremes: some sections of the city are less rent-burdened than before and some are more.</p>
+
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.socialexplorer.com/332115974b/embed" width="778.6" height="444" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+
+<p class="graph">So it seems more people are able to afford the ever-increasing rental prices, while closer to the outskirts of the city, they are becoming more burdened to the point that they might not be able to sustain it and have to leave, making room for people who can afford those prices. So could LLCs be linked to gentrification and rising prices that are pushing lower income people out? There seems to be a correlation, but it could be that LLCs are just a symptom of this issue, where groups of people use this form of jurisdiction and become companies because they see housing as a business, that only some can afford. This, as Jonathan Miller states in the first video above, is not the case for everyone, or even for most people, using an LLC. But as he says, the development of luxury rental buildings means that companies that own these buildings are thinking about profits, as companies do. And as Rolnik explains, rental-backed bonds becoming the owners of buildings means they want investments and profits, not precisely affordability from their properties. There are other consequences with this type of ownership as well.</p>
+
+<h3>Empty potential homes</h3>
+
+<p class="graph">If you are just investing in a property, you probably do not consider it your home. It just becomes one of your assets. The New York Times article <a href="http://www.nytimes.com/2011/07/07/nyregion/more-apartments-are-empty-yet-rented-or-owned-census-finds.html?pagewanted=all&_r=2">“Homes Dark and Lifeless, Kept by Out-of-Towners”</a> describes how some apartments of Manhattan, mostly in wealthier neighborhoods, remain empty throughout most of the year.</p>
+
+<p class="graph">“Since 2000, the number of Manhattan apartments occupied by absentee owners and renters swelled by more than 70 percent, to nearly 34,000, from 19,000,” states the article published in 2011.</p>
+
+<p class="graph">For Picture the Homeless, an organization led by New York City’s homeless advocating for their issues, those empty buildings are potential homes, more when there has been almost a twofold increase of the homeless in the city. The organization, with help from Hunter College, <a href="http://picturethehomeless.org/files/pdf/Banking_on_Vacancy_-_Homelessness_and_Real_Estate_Speculation.pdf">set out in 2011</a> to count vacant buildings and lots in low-income neighborhoods, finding that the buildings could house all the homeless people in the city and more.</p>
+
+<p class="graph">The report connects homelessness and real estate speculation because, as Jonathan Miller and Raquel Rolnik both explained, the rising prices that come with it limit the amount of housing options that low-income communities are able to afford and LLCs then make it “nearly impossible for local communities to hold entities warehousing properties accountable.”</p>
+
+<h3>LLCs as a veil</h3>
+
+<p class="graph">Jonathan Miller mentioned the problem of “LLCs nested under LLCs” as he referred to the recent New York Times’ special series <a href="http://www.nytimes.com/2015/02/08/nyregion/stream-of-foreign-wealth-flows-to-time-warner-condos.html?module=RelatedCoverage">“Towers of Secrecy”</a> which focuses on condos and its owners in the Time Warner Center: people hidden behind shell companies, like celebrities who are doing so for privacy, but others, some of which face corruption charges in their own countries.</p>
+
+<p class="graph">“They have been able to make these multimillion-dollar purchases with few questions asked because of United States laws that foster the movement of largely untraceable money through shell companies,” the article states.</p>
+
+<p class="graph">It continues:</p>
+
+<blockquote>“Vast sums are flowing unchecked around the world as never before — whether motivated by corruption, tax avoidance or investment strategy, and enabled by an ever-more-borderless economy and a proliferation of ways to move and hide assets.”</blockquote>
+
+<p class="graph">The International Consortium of Investigative Journalists also touches on the challenge of tax avoidance in <a href="http://www.icij.org/offshore/hidden-plain-sight-new-york-just-another-island-haven">“Hidden in Plain Sight: New York Just Another Island Haven”</a> as “high-end New York real estate is an alluring destination for corrupt politicians, tax dodgers and money launderers around the globe” because of “state and local policies that lavish tax breaks on Manhattan’s wealthiest homeowners and federal policies that allow real estate agents to close their eyes to whether their clients are trafficking in illicit money”.</p>
+
+<p class="graph">The article also mentions the process of layering: “creating mazes of bank accounts and offshore companies to move and hide money” in which if they “are laid down skillfully, it’s often impossible for authorities to detect flows of illicit cash”. Towers of Secrecy also went through how hard it was to investigate and find out who were the actual people behind the properties. LLCs, even if not created for those specific purposes, becomes a tool for some people to hide their secrets beyond just to remain private. They remain out of sight so their activities do so as well.</p>
+
+<h3>If you don’t know who the owner is, who is then responsible?</h3>
+
+<p class="graph">“The biggest problem with LLCs from an advocate and tenant standpoint is that they can be used to cover the tracks of a big landlord company,” says Kerri White, the Director of the <a href="http://www.uhab.org/">Urban Homesteading Assistance Board</a>. “A tenant in a building may think their landlord is only the owner of their building, where in reality it’s a huge corporation with many buildings in the neighborhood.”</p>
+
+<p class="graph">As you can see in <a href="http://www.turnontheheat.nyc/">another project</a> Michael “Ziggy” Mintz worked on, most properties with complaints of not providing heat or hot water are owned by people behind LLCs.</p> 
+
+<p class="graph">He explains his project this way:</p>
+
+<blockquote>“LLC owners typically indicates that it's a larger profit-driven landlord, who is interested in 'flipping' the building or extracting as much profit as possible. Therefore, the owner doesn't care about the buildings' inhabitants and often does nothing about dangerous conditions. Worse, if the tenants are rent-stabilized, owners often use poor housing conditions as a form of harassment to force the tenants out so the apartment can be renovated and rented to new, higher-income and higher-paying residents. LLCs are easy to form. There are some reasonable legal reasons for using an LLCs (I think it shields you from some personal liability), but in my experiences, an LLCs often indicates that there's a predatory investor.”</blockquote>
+
+<p class="graph">The Public Advocate for the City of New York, Letitia James, keeps a list of the <a href="http://landlordwatchlist.com/">100 worst landlords in the city</a>. As you might guess, nearly all of them are behind LLCs.</p>
+
+<p class="graph">“The biggest problem with entities owning properties is that there is no personal liability. So, an LLC can default on its mortgage or on common charges and the liability is limited to the property. Condos have begun asking for escrows or personal guaranties if a buyer is taking title in the name of an entity, particularly foreign buyers,” said Lisa L. Aguilera del Puerto.</p>
+
+<p class="graph">Of course, LLCs might be the most common culprits because they are just the most common way to ascribe ownership to a property at the moment. However, it does make it harder to find out who is behind a problem and it limits the potential financial repercussions if there is one.</p>
+
+<h3>Want to unmask the LLC that owns your building?</h3>
+
+<p class="graph">(with help from <a href="http://www.propertyshark.com/Real-Estate-Reports/2013/09/18/look-beyond-the-llc-unmask-the-real-owners-of-a-property-2/">PropertyShark</a>)</p>
+
+<ol>
+<li>First, search through <a href="http://a836-acris.nyc.gov/DS/DocumentSearch/PartyName">public property transaction records</a> by business name for the most recent deed:</li> 
+
+<ul>
+<li>Go to view through IMG (Image of the document) or DET (Details).</li>
+</ul>
+
+<p class="graph">Did you succeed?</p>
+
+<li>If not yet, <a href="http://appext20.dos.ny.gov/corp_public/CORPSEARCH.ENTITY_SEARCH_ENTRY">search here on the New York State Department of State Corporation and Business Entity Database</a></li> 
+
+<li>Nothing yet? Maybe you will have better luck searching through the <a href="http://a810-bisweb.nyc.gov/bisweb/bispi00.jsp">building permits</a> from the city here.</li>
+
+<ul>
+<li>First, look for the house number.</li>
+
+<li>Then go to the very bottom left hand corner and click on Jobs/Filings.</li>
+
+<li>Go now to the latest job permit at the very bottom, click on the job number (if that one didn’t go through, click on another one until you get through.)</li> 
+
+<li>At the very bottom of the next document, there’s a section that reads “Owner Information”. Get a name?</li>
+</ul>
+
+<li>Instead then look at the <a href="https://hpdonline.hpdnyc.org/HPDonline/provide_address.aspx">Housing Development and Development Online Building Information</a></li> 
+
+<ul>
+<li>On the left hand, click on “Property Owner Registration Information”. Any of the officers sound familiar?</li>
+</ul>
+
+</ol>
+
+<p class="graph">Now, fill in this google form to make the owner’s identity public!</p>
+
+<div><iframe src="https://docs.google.com/forms/d/1-lY3CfT7GmsLPOd7eLyTJm_wU9KgEnjYGXTSxoof73c/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></div>
+
+<h3>Now what?</h3>
+
+<p class="graph">If this is an important for you, you can <a href="http://homesforall.org/action/">join a movement here</a>.</p>
+
+<p class="graph">Or find more information from <a href="http://righttothecity.org/">Right to the City</a>.</p>
+
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    // 1. Know when someone clicked submit.
+    $(".submit-button").click(function(){
+      
+      var rent = $("#rent").val();
+      var years= 0;
+        var one=(rent*12*20)+108169.68;
+
+      var years= Math.ceil(1962000/one);
+
+      $("input:text").val();
+
+      if (rent == ""){
+        alert("Please submit your rent.")
+      } else {
+        $(".output").text("It would take " + years + " years to pay off the property.");
+      }
+
+      console.log(rent);
+
+
+});
+    
+  </script>
+
+</body>
+
+</html>
